@@ -1,0 +1,26 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven {url "https://jitpack.io"}
+
+        maven {
+            name = "GitHubPackages"
+            url = uri("https://maven.pkg.github.com/u-n-l/core-java")
+            credentials {
+                username = "lokeshpunl"
+                password ="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"
+            }
+        }
+    }
+}
+rootProject.name = "ValidatorSample"
+include ':app'
